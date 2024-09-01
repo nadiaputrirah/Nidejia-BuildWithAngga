@@ -1,0 +1,764 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nadia Putri Rahmaniar">
+    <meta name="description" content="" />
+    <meta name="keywords" content="tailwind css" />
+
+    <title>Nidejia - BuildWithAngga</title>
+    <link rel="icon" href="dist/assets/icon/favicon.ico" type="image/x-icon">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,
+    100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link href="dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-dark">
+
+    <!-- Start Header -->
+    <header id="navbar">
+        <nav class="bg-primary max-w-screen-xl mx-auto rounded-2xl left-20 right-20 md:left-10 md:right-10 py-5 px-4 mt-8 z-10 fixed">
+            <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl lg:px-2">
+                <!-- Nav Brand -->
+                <a href="/" class="flex items-center">
+                    <img src="dist/assets/image/logo.svg" class="mr-2 h-8 sm:h-11" alt="Logo" />
+                    <span class="self-center text-2xl font-extrabold text-white">Nidejia</span>
+                </a>
+                <div class="flex items-center lg:order-2">
+                    <a href="#" class="bg-secondary text-white font-bold rounded-full text-base px-6 py-3 mr-3">Sign In</a>
+                    <a href="#" class="bg-accent text-primary font-bold rounded-full text-base px-6 py-3 lg:mr-0 md:mr-3">Sign Up</a>
+                    <!-- Toggle -->
+                    <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                        <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                </div>
+                <!-- Menu -->
+                <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+                    <ul class="flex flex-col mt-4 text-base font-bold lg:flex-row lg:space-x-8 lg:mt-0">
+                        <li>
+                            <a href="#" class="block py-2 pr-4 pl-3 text-white lg:p-0">Featured</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-2 pr-4 pl-3 text-white lg:p-0">Categories</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-2 pr-4 pl-3 text-white lg:p-0">Testimonials</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-2 pr-4 pl-3 text-white lg:p-0">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Hero -->
+    <section id="hero-home" class="hero bg-hero bg-cover bg-no-repeat max-h-[750px] pt-[30px]">
+        <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-56 lg:grid-cols-12">
+            <div class="mr-auto lg:col-span-6">
+                <h1 class="text-white max-w-xl mb-4 text-5xl font-bold md:text-4xl xl:text-6xl xl:leading-snug lg:leading-normal">Find Glorious Living
+                    And Loving Space</h1>
+                <p class="text-white max-w-md mb-12 font-normal lg:mb-8 md:text-base lg:text-lg xl:text-xl xl:leading-8 lg:leading-none">Dolor house comfortable si amet with cheap <br>
+                    price that also lorem when you need grow.</p>
+                <form class="max-w-xl pt-8">
+                    <div class="relative">
+                        <input type="search" id="search-dropdown" class="bg-primary text-grayLight p-5 w-full z-10 text-lg rounded-full border-none" placeholder="  Search by city or country..." required />
+                        <button type="submit" class="text-primary bg-accent absolute top-0 end-0 p-5 px-12 text-lg font-bold h-ful rounded-e-full">
+                            Explore
+                        </button>
+                    </div>
+                </form>
+            </div>               
+        </div>
+    </section>
+    <!-- End Hero -->
+
+    <!-- Start Strengths -->
+    <section id="strengths" class="strengths bg-primary absolute max-w-screen-xl mx-auto rounded-2xl left-20 right-20 md:left-10 md:right-10">
+        <div class="flex justify-between items-center mx-auto py-6 px-12">
+            <!-- Items 1 -->
+            <div class="flex flex-row items-center gap-4">
+                <div class="bg-accent h-20 w-20 rounded-full flex items-center justify-center">
+                    <img src="dist/assets/icon/icon-house.svg" alt="icon-house" class="h-9" />
+                </div>
+                <div>
+                    <p class="text-white text-2xl font-bold">382M</p>
+                    <p class="text-grayLight">Kos Available</p>
+                </div>
+            </div>
+            <!-- Line -->
+            <div class="w-px h-20 bg-secondary"></div>
+
+            <!-- Items 2 -->
+            <div class="flex flex-row items-center gap-4">
+                <div class="bg-accent h-20 w-20 rounded-full flex items-center justify-center">
+                    <img src="dist/assets/icon/icon-user.svg" alt="icon-user" class="h-9" />
+                </div>
+                <div>
+                    <p class="text-white text-2xl font-bold">9/10</p>
+                    <p class="text-grayLight">People Happy</p>
+                </div>
+            </div>
+            <!-- Line -->
+            <div class="w-px h-20 bg-secondary"></div>
+
+            <!-- Items 3 -->
+            <div class="flex flex-row items-center gap-4">
+                <div class="bg-accent h-20 w-20 rounded-full flex items-center justify-center">
+                    <img src="dist/assets/icon/icon-security.svg" alt="icon-security" class="h-12" />
+                </div>
+                <div>
+                    <p class="text-white text-2xl font-bold">100%</p>
+                    <p class="text-grayLight">High Security</p>
+                </div>
+            </div>
+            <!-- Line -->
+            <div class="w-px h-20 bg-secondary"></div>
+
+            <!-- Items 4 -->
+            <div class="flex flex-row items-center gap-4">
+                <div class="bg-accent h-20 w-20 rounded-full flex items-center justify-center">
+                    <img src="dist/assets/icon/icon-global.svg" alt="icon-global" class="h-9" />
+                </div>
+                <div>
+                    <p class="text-white text-2xl font-bold">183</p>
+                    <p class="text-grayLight">Countries</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Strengths -->
+
+    <!-- Start Lastest Deal -->
+    <section id="latest-deal" class="latest-deal max-w-screen-xl mx-auto mt-64 relative">
+        <div class="container">
+            <!-- Heading -->
+            <div class="flex-col text-center">
+                <h2 class="text-white text-3xl font-bold leading-normal">Our Latest Deals</h2>
+                <p class="text-grayLight leading-normal">Explore the beauty of architecture and living love</p>
+            </div>
+            <!-- Cards -->
+            <div class="relative">
+                <!-- Cards Grid -->
+                <div class="grid grid-cols-12 gap-8 mt-8">
+                    <!-- Card 1 -->
+                    <div class="col-span-3 rounded-3xl bg-house-1 bg-cover">
+                        <!-- Card Desc -->
+                        <div class="flex flex-col p-5 gap-4 justify-end min-h-[350px] bg-card-deals">
+                            <!-- Top  Desc -->
+                            <div class="flex items-center justify-between">
+                                <div class="flex-col">
+                                    <p class="text-white text-xl leading-normal font-bold">De Flecce</p>
+                                    <p class="text-white text-sm font-semibold">$47,298<span class="font-normal">/mo</span></p>
+                                </div>
+                                <div class="flex gap-0.5">
+                                    <img src="dist/assets/icon/star.svg" alt="icon-star" class="h-5" />
+                                    <p class="text-white text-sm">4.5/5</p>
+                                </div>
+                            </div>
+                            <!-- Bottom Desc -->
+                            <div class="flex justify-between">
+                                <div class="flex gap-1">
+                                    <img src="dist/assets/icon/square.svg" alt="icon building size" class="size-[18px]" />
+                                    <p class="text-white text-sm">529 sqft</p>
+                                </div>
+                                <div class="flex gap-1">
+                                    <img src="dist/assets/icon/profile-white.svg" alt="icon user white" class="size-[18px]" />
+                                    <p class="text-white text-sm">3</p>
+                                </div>
+                                <div class="flex gap-1">
+                                    <img src="dist/assets/icon/wifi.svg" alt="icon wifi" class="size-[18px]" />
+                                    <p class="text-white text-sm">10gb</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col-span-3 rounded-3xl bg-house-2 bg-cover">
+                        <!-- Card Desc -->
+                        <div class="flex flex-col p-5 gap-4 justify-end min-h-[350px] bg-card-deals">
+                            <!-- Top Desc -->
+                            <div class="flex items-center justify-between">
+                                <div class="flex-col">
+                                    <p class="text-white text-xl leading-normal font-bold">Party Every</p>
+                                    <p class="text-white text-sm font-semibold">$18,983<span class="font-normal">/mo</span></p>
+                                </div>
+                                <div class="flex gap-0.5">
+                                    <img src="dist/assets/icon/star.svg" alt="icon-star" class="h-5" />
+                                    <p class="text-white text-sm">4.5/5</p>
+                                </div>
+                            </div>
+                            <!-- Bottom Desc -->
+                            <div class="flex justify-between">
+                                <div class="flex gap-1">
+                                    <img src="dist/assets/icon/square.svg" alt="icon building size" class="size-[18px]" />
+                                    <p class="text-white text-sm">529 sqft</p>
+                                </div>
+                                <div class="flex gap-1">
+                                    <img src="dist/assets/icon/profile-white.svg" alt="icon user white" class="size-[18px]" />
+                                    <p class="text-white text-sm">3</p>
+                                </div>
+                                <div class="flex gap-1">
+                                    <img src="dist/assets/icon/wifi.svg" alt="icon wifi" class="size-[18px]" />
+                                    <p class="text-white text-sm">10gb</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="col-span-3 rounded-3xl bg-house-3 bg-cover">
+                        <!-- Card Desc -->
+                        <div class="flex flex-col p-5 gap-4 justify-end min-h-[350px] bg-card-deals">
+                            <!-- Top Desc -->
+                            <div class="flex items-center justify-between">
+                                <div class="flex-col">
+                                    <p class="text-white text-xl leading-normal font-bold">Brown Hall</p>
+                                    <p class="text-white text-sm font-semibold">$84,209<span class="font-normal">/mo</span></p>
+                                </div>
+                                <div class="flex gap-0.5">
+                                    <img src="dist/assets/icon/star.svg" alt="icon-star" class="h-5" />
+                                    <p class="text-white text-sm">4.5/5</p>
+                                </div>
+                            </div>
+                            <!-- Bottom Desc -->
+                            <div class="flex justify-between">
+                                <div class="flex gap-1">
+                                    <img src="dist/assets/icon/square.svg" alt="icon building size" class="size-[18px]" />
+                                    <p class="text-white text-sm">529 sqft</p>
+                                </div>
+                                <div class="flex gap-1">
+                                    <img src="dist/assets/icon/profile-white.svg" alt="icon user white" class="size-[18px]" />
+                                    <p class="text-white text-sm">3</p>
+                                </div>
+                                <div class="flex gap-1">
+                                    <img src="dist/assets/icon/wifi.svg" alt="icon wifi" class="size-[18px]" />
+                                    <p class="text-white text-sm">10gb</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="col-span-3 rounded-3xl bg-house-4 bg-cover">
+                        <!-- Card Desc -->
+                        <div class="flex flex-col p-5 gap-4 justify-end min-h-[350px] bg-card-deals">
+                            <!-- Top Desc -->
+                            <div class="flex items-center justify-between">
+                                <div class="flex-col">
+                                    <p class="text-white text-xl leading-normal font-bold">Mini Max</p>
+                                    <p class="text-white text-sm font-semibold">$14,221<span class="font-normal">/mo</span></p>
+                                </div>
+                                <div class="flex gap-0.5">
+                                    <img src="dist/assets/icon/star.svg" alt="icon-star" class="h-5" />
+                                    <p class="text-white text-sm">4.5/5</p>
+                                </div>
+                            </div>
+                            <!-- Bottom Desc -->
+                            <div class="flex justify-between">
+                                <div class="flex gap-1">
+                                    <img src="dist/assets/icon/square.svg" alt="icon building size" class="size-[18px]" />
+                                    <p class="text-white text-sm">529 sqft</p>
+                                </div>
+                                <div class="flex gap-1">
+                                    <img src="dist/assets/icon/profile-white.svg" alt="icon user white" class="size-[18px]" />
+                                    <p class="text-white text-sm">3</p>
+                                </div>
+                                <div class="flex gap-1">
+                                    <img src="dist/assets/icon/wifi.svg" alt="icon wifi" class="size-[18px]" />
+                                    <p class="text-white text-sm">10gb</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Left Arrow Button -->
+                <button class="absolute left-0 top-1/4 transform -translate-y-1/2 -translate-x-6  bg-primary text-white rounded-full p-2.5 shadow-lg z-10 hover:bg-secondDarkGray">
+                    <img src="dist/assets/icon/arrow-left.svg" alt="Prev" class="h-6 w-6"/>
+                </button>
+    
+                <!-- Right Arrow Button -->
+                <button class="absolute right-0 top-1/4 transform -translate-y-1/2 translate-x-6  bg-primary text-white rounded-full p-2.5 shadow-lg z-10 hover:bg-secondary">
+                    <img src="dist/assets/icon/arrow-right.svg" alt="Next" class="h-6 w-6"/>
+                </button>
+            </div>
+        </div>
+    </section>    
+    <!-- End Lastest Deal -->
+
+    <!-- Start Categories -->
+		<section id="categories" class="bg-primary w-full mx-auto mt-52">
+			<div class="max-w-screen-xl mx-auto lg:py-12">
+				<div class="flex items-center">
+					<div class="flex-col grow">
+						<h2 class="text-white text-3xl font-bold mb-2">Categories</h2>
+						<p class="text-grayLight text-lg">We provide everything</p>
+					</div>
+					<a href="/" class="bg-accent font-bold py-3 px-6 rounded-full text-primary">Explore All</a>
+				</div>
+
+				<div class="grid grid-cols-12 gap-8 mt-8 relative">
+                    <!-- Left Arrow Button -->
+                    <button class="prev-btn absolute left-0 top-1/2 z-10 transform -translate-y-1/2">
+                        <img src="dist/assets/icon/arrow-left.svg" alt="Prev" class="h-6 w-6"/>
+                    </button>
+					<!-- Items 1 -->
+					<div class="flex col-span-3 gap-4 pl-5 py-5 bg-darkGray rounded-3xl items-center">
+						<img src="dist/assets/icon/microscope.svg" alt="icon-microscope" class="h-9" />
+						<div class="flex-col">
+							<p class="text-white text-xl font-bold">Star Hills</p>
+							<p class="text-grayLight">18,394</p>
+						</div>
+					</div>
+					<!-- Items 2 -->
+					<div class="flex col-span-3 gap-4 pl-5 py-5 bg-darkGray rounded-3xl items-center">
+						<img src="dist/assets/icon/buildings.svg" alt="icon-buildings" class="h-9" />
+						<div class="flex-col">
+							<p class="text-white text-xl font-bold">Apartments</p>
+							<p class="text-grayLight">18,394</p>
+						</div>
+					</div>
+					<!-- Items 3 -->
+					<div class="flex col-span-3 gap-4 pl-5 py-5 bg-darkGray rounded-3xl items-center">
+						<img src="dist/assets/icon/house.svg" alt="icon-house" class="h-9" />
+						<div class="flex-col">
+							<p class="text-white text-xl font-bold">Star Hills</p>
+							<p class="text-grayLight">18,394</p>
+						</div>
+					</div>
+					<!-- Items 4 -->
+					<div class="flex col-span-3 gap-4 pl-5 py-5 bg-darkGray rounded-3xl items-center">
+						<img src="dist/assets/icon/building.svg" alt="icon-building" class="h-9" />
+						<div class="flex-col">
+							<p class="text-white text-xl font-bold">Landed House</p>
+							<p class="text-grayLight">18,394</p>
+						</div>
+					</div>
+					<!-- Items 5 -->
+					<div class="flex col-span-3 gap-4 pl-5 py-5 bg-darkGray rounded-3xl items-center">
+						<img src="dist/assets/icon/airplane.svg" alt="icon-airplane" class="h-9" />
+						<div class="flex-col">
+							<p class="text-white text-xl font-bold">Airport</p>
+							<p class="text-grayLight">18,394</p>
+						</div>
+					</div>
+					<!-- Items 6 -->
+					<div class="flex col-span-3 gap-4 pl-5 py-5 bg-darkGray rounded-3xl items-center">
+						<img src="dist/assets/icon/cup.svg" alt="icon-cup" class="h-9" />
+						<div class="flex-col">
+							<p class="text-white text-xl font-bold">Awards</p>
+							<p class="text-grayLight">18,394</p>
+						</div>
+					</div>
+					<!-- Items 7 -->
+					<div class="flex col-span-3 gap-4 pl-5 py-5 bg-darkGray rounded-3xl items-center">
+						<img src="dist/assets/icon/sun-fog.svg" alt="icon-sunset" class="h-9" />
+						<div class="flex-col">
+							<p class="text-white text-xl font-bold">Sunset</p>
+							<p class="text-grayLight">18,394</p>
+						</div>
+					</div>
+					<!-- Items 8 -->
+					<div class="flex col-span-3 gap-4 pl-5 py-5 bg-darkGray rounded-3xl items-center">
+						<img src="dist/assets/icon/others.svg" alt="icon-others" class="h-9" />
+						<div class="flex-col">
+							<p class="text-white text-xl font-bold">Others</p>
+							<p class="text-grayLight">18,394</p>
+						</div>
+					</div>
+                    <!-- Right Arrow Button -->
+                    <button class="next-btn absolute right-0 top-1/2 z-10 transform -translate-y-1/2">
+                        <img src="dist/assets/icon/arrow-right.svg" alt="Next" class="h-6 w-6"/>
+                    </button>
+				</div>
+			</div>
+		</section>
+    <!-- End Categories -->
+    
+    <!-- Start Benefits -->
+    <section id="benefits" class="max-w-screen-xl mx-auto mt-28">
+        <div class="py-6">
+            <div class="grid grid-cols-12 gap-8">
+                <!-- Left Section -->
+                <div class="col-span-6 space-y-7">
+                    <!-- Heading -->
+                    <div class="w-[354px]">
+                        <h2 class="text-white text-3xl font-bold max-w-2xl leading-snug">Huge Benefits That Make You Feel Happier</h2>
+                    </div>
+                    <!-- Desc -->
+                    <ul class="space-y-5">
+                        <li class="flex items-center gap-3">
+                        <img src="dist/assets/icon/tick-circle.svg" alt="icon-checked" class="w-8 h-8" />
+                        <p class="text-white text-xl font-semibold">Checking faster without depositing</p>
+                        </li>
+                        <li class="flex items-center gap-3">
+                        <img src="dist/assets/icon/tick-circle.svg" alt="icon-checked" class="w-8 h-8" />
+                        <p class="text-white text-xl font-semibold">24/7 security guarding your place</p>
+                        </li>
+                        <li class="flex items-center gap-3">
+                        <img src="dist/assets/icon/tick-circle.svg" alt="icon-checked" class="w-8 h-8" />
+                        <p class="text-white text-xl font-semibold">Fast-internet access without lagging</p>
+                        </li>
+                        <li class="flex items-center gap-3">
+                        <img src="dist/assets/icon/tick-circle.svg" alt="icon-checked" class="w-8 h-8" />
+                        <p class="text-white text-xl font-semibold">High standard of layout of houses</p>
+                        </li>
+                        <li class="flex items-center gap-3">
+                        <img src="dist/assets/icon/tick-circle.svg" alt="icon-checked" class="w-8 h-8" />
+                        <p class="text-white text-xl font-semibold">All other benefits, we promise</p>
+                        </li>
+                    </ul>
+                    <!-- Buttons -->
+                    <div class="flex gap-3">
+                        <a href="/" class="py-3 px-6 bg-accent text-primary font-semibold rounded-full flex items-center gap-2">
+                            <img src="dist/assets/icon/message-notif.svg" alt="Message Notification Icon">
+                            Call Sales
+                        </a>
+                        <a href="/" class="py-3 px-6 bg-secondary text-white font-semibold rounded-full">All Benefits</a>
+                    </div>
+                </div>
+
+                <!-- Right Section -->
+                <div class="col-span-6 grid grid-cols-6 gap-7">
+                <!-- img 1 -->
+                <div class="col-span-3 overflow-hidden rounded-3xl bg-benefit-1 bg-cover bg-no-repeat bg-center">
+                    <div class="flex flex-col justify-end p-5 gap-3 min-h-52 bg-card-benefit">
+                        <div class="flex justify-between items-center">
+                            <p class="text-white text-xl font-bold leading-7 max-w-40">House for Office and Living</p>
+                            <div class="flex items-center gap-0.5">
+                            <img src="dist/assets/icon/profile-white.svg" alt="icon-profile-white" class="w-4 h-4" />
+                            <p class="text-white text-sm">18,309</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- img 2 -->
+                <div class="col-span-3 overflow-hidden rounded-3xl bg-benefit-2 bg-cover bg-no-repeat bg-center">
+                    <div class="flex flex-col justify-end p-5 gap-3 min-h-52 bg-card-benefit">
+                    <div class="flex justify-between items-center">
+                        <p class="text-white text-xl font-bold leading-7 max-w-40">House Nearby with Mall</p>
+                        <div class="flex items-center gap-0.5">
+                        <img src="dist/assets/icon/profile-white.svg" alt="icon-profile-white" class="w-4 h-4" />
+                        <p class="text-white text-sm">84,209</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- img 3 -->
+                <div class="col-span-3 overflow-hidden rounded-3xl bg-benefit-3 bg-cover bg-no-repeat bg-center">
+                    <div class="flex flex-col justify-end p-5 gap-3 min-h-52 bg-card-benefit">
+                    <div class="flex justify-between items-center">
+                        <p class="text-white text-xl font-bold leading-7 max-w-40">House Historical Building</p>
+                        <div class="flex items-center gap-0.5">
+                        <img src="dist/assets/icon/profile-white.svg" alt="icon-profile-white" class="w-4 h-4" />
+                        <p class="text-white text-sm">22,409</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- img 4 -->
+                <div class="col-span-3 overflow-hidden rounded-3xl bg-benefit-4 bg-cover bg-no-repeat bg-center">
+                    <div class="flex flex-col justify-end p-5 gap-3 min-h-52 bg-card-benefit">
+                    <div class="flex justify-between items-center">
+                        <p class="text-white text-xl font-bold leading-7 max-w-40">Landed House with Park</p>
+                        <div class="flex items-center gap-0.5">
+                        <img src="dist/assets/icon/profile-white.svg" alt="icon-profile-white" class="w-4 h-4" />
+                        <p class="text-white text-sm">47,583</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Benefits -->
+
+    <!-- Start Testimonial -->
+    <section id="testimonial" class="max-w-screen-xl mx-auto mt-28">
+        <div class="py-6">
+            <!-- Heading -->
+            <div class="text-center flex flex-col items-center">
+                <h2 class="text-white text-3xl font-bold leading-normal">Happy Customers</h2>
+                <p class="text-grayLight text-xl leading-normal">We’d love to come back again soon</p>
+            </div>
+            <!-- Testimonials Items -->
+            <div class="columns-3 space-y-8 gap-8 mt-8">
+                <!-- Item 1-->
+                <div class="flex flex-col items-start justify-center py-4 px-7 bg-primary space-y-5 rounded-3xl">
+                    <!-- Rating -->
+                    <div class="flex">
+                        <img src="dist/assets/icon/star.svg" alt="icon-star" class="h-5" />
+                        <img src="dist/assets/icon/star.svg" alt="icon-star" class="h-5" />
+                        <img src="dist/assets/icon/star.svg" alt="icon-star" class="h-5" />
+                        <img src="dist/assets/icon/star.svg" alt="icon-star" class="h-5" />
+                        <img src="dist/assets/icon/star.svg" alt="icon-star" class="h-5" />
+                    </div>
+                    <!-- Message -->
+                    <p class="text-white text-xl leading-8 mt-2 max-w-80">I was not so sure if there was a beautiful bedroom, but it was really great experience.</p>
+                    <!-- Profile User -->
+                    <div class="flex gap-3">
+                        <img src="dist/assets/image/profile-user.jpg" alt="profil picture" class="h-12 rounded-full" />
+                        <div class="flex-col">
+                            <p class="text-white text-base font-semibold">Evelin Bie</p>
+                            <p class="text-grayLight text-sm">Full-Time Traveler</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 2-->
+                <div class="flex flex-col items-start justify-center py-4 px-7 bg-primary space-y-5 rounded-3xl">
+                    <!-- Rating -->
+                    <div class="flex">
+                        <img src="dist/assets/icon/star.svg" alt="icon-star" class="h-5" />
+                        <img src="dist/assets/icon/star.svg" alt="icon-star" class="h-5" />
+                        <img src="dist/assets/icon/star.svg" alt="icon-star" class="h-5" />
+                        <img src="dist/assets/icon/star.svg" alt="icon-star" class="h-5" />
+                        <img src="dist/assets/icon/star.svg" alt="icon-star" class="h-5" />
+                    </div>
+                    <!-- Message -->
+                    <p class="text-white text-xl leading-8 mt-2 max-w-80">It’s just amazing, will be back.</p>
+                    <!-- Profile User -->
+                    <div class="flex gap-3">
+                        <img src="dist/assets/image/profile-user.jpg" alt="profil picture" class="h-12 rounded-full" />
+                        <div class="flex-col">
+                            <p class="text-white text-base font-semibold">Evelin Bie</p>
+                            <p class="text-grayLight text-sm">Full-Time Traveler</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 3-->
+                <div class="flex flex-col items-start justify-center py-4 px-7 bg-primary space-y-5 rounded-3xl">
+                    <!-- Rating -->
+                    <div class="flex">
+                        <img src="dist/assets/icon/star.svg" alt="icon-star" class="h-5" />
+                        <img src="dist/assets/icon/star.svg" alt="icon-star" class="h-5" />
+                        <img src="dist/assets/icon/star.svg" alt="icon-star" class="h-5" />
+                        <img src="dist/assets/icon/star.svg" alt="icon-star" class="h-5" />
+                        <img src="dist/assets/icon/star.svg" alt="icon-star" class="h-5" />
+                    </div>
+                    <!-- Message -->
+                    <p class="text-white text-xl leading-8 mt-2 max-w-80">I was not so sure if there was a beautiful bedroom, but it was really great experience.</p>
+                    <!-- Profile User -->
+                    <div class="flex gap-3">
+                        <img src="dist/assets/image/profile-user.jpg" alt="profil picture" class="h-12 rounded-full" />
+                        <div class="flex-col">
+                            <p class="text-white text-base font-semibold">Evelin Bie</p>
+                            <p class="text-grayLight text-sm">Full-Time Traveler</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 4-->
+                <div class="flex flex-col items-start justify-center py-4 px-7 bg-primary space-y-5 rounded-3xl">
+                    <!-- Rating -->
+                    <div class="flex">
+                        <img src="dist/assets/icon/star.svg" alt="icon-star" class="h-5" />
+                        <img src="dist/assets/icon/star.svg" alt="icon-star" class="h-5" />
+                        <img src="dist/assets/icon/star.svg" alt="icon-star" class="h-5" />
+                        <img src="dist/assets/icon/star.svg" alt="icon-star" class="h-5" />
+                        <img src="dist/assets/icon/star.svg" alt="icon-star" class="h-5" />
+                    </div>
+                    <!-- Message -->
+                    <p class="text-white text-xl leading-8 mt-2 max-w-80">It’s just amazing, will be back.</p>
+                    <!-- Profile User -->
+                    <div class="flex gap-3">
+                        <img src="dist/assets/image/profile-user.jpg" alt="profil picture" class="h-12 rounded-full" />
+                        <div class="flex-col">
+                            <p class="text-white text-base font-semibold">Evelin Bie</p>
+                            <p class="text-grayLight text-sm">Full-Time Traveler</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 5-->
+                <div class="flex flex-col items-start justify-center py-4 px-7 bg-primary space-y-5 rounded-3xl">
+                    <!-- Rating -->
+                    <div class="flex">
+                        <img src="dist/assets/icon/star.svg" alt="icon-star" class="h-5" />
+                        <img src="dist/assets/icon/star.svg" alt="icon-star" class="h-5" />
+                        <img src="dist/assets/icon/star.svg" alt="icon-star" class="h-5" />
+                        <img src="dist/assets/icon/star.svg" alt="icon-star" class="h-5" />
+                        <img src="dist/assets/icon/star.svg" alt="icon-star" class="h-5" />
+                    </div>
+                    <!-- <M>essage -->
+                    <p class="text-white text-xl leading-8 mt-2 max-w-80">I was not so sure if there was a beautiful bedroom, but it was really great experience.</p>
+                    <!-- Profile USer -->
+                    <div class="flex gap-3">
+                        <img src="dist/assets/image/profile-user.jpg" alt="profil picture" class="h-12 rounded-full" />
+                        <div class="flex-col">
+                            <p class="text-white text-base font-semibold">Evelin Bie</p>
+                            <p class="text-grayLight text-sm">Full-Time Traveler</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 6-->
+                <div class="flex flex-col items-start justify-center py-4 px-7 bg-primary space-y-5 rounded-3xl">
+                    <!-- Rating -->
+                    <div class="flex">
+                        <img src="dist/assets/icon/star.svg" alt="icon-star" class="h-5" />
+                        <img src="dist/assets/icon/star.svg" alt="icon-star" class="h-5" />
+                        <img src="dist/assets/icon/star.svg" alt="icon-star" class="h-5" />
+                        <img src="dist/assets/icon/star.svg" alt="icon-star" class="h-5" />
+                        <img src="dist/assets/icon/star.svg" alt="icon-star" class="h-5" />
+                    </div>
+                    <!-- Message -->
+                    <p class="text-white text-xl leading-8 mt-2 max-w-80">During covid I was stayed here and I got a lot of full of supports that I need to keep my body healthy.</p>
+                    <!-- Profile User -->
+                    <div class="flex gap-3">
+                        <img src="dist/assets/image/profile-user.jpg" alt="profil picture" class="h-12 rounded-full" />
+                        <div class="flex-col">
+                            <p class="text-white text-base font-semibold">Evelin Bie</p>
+                            <p class="text-grayLight text-sm">Full-Time Traveler</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 7-->
+                <div class="flex flex-col items-start justify-center py-4 px-7 bg-primary space-y-5 rounded-3xl">
+                    <!-- Rating -->
+                    <div class="flex">
+                        <img src="dist/assets/icon/star.svg" alt="icon-star" class="h-5" />
+                        <img src="dist/assets/icon/star.svg" alt="icon-star" class="h-5" />
+                        <img src="dist/assets/icon/star.svg" alt="icon-star" class="h-5" />
+                        <img src="dist/assets/icon/star.svg" alt="icon-star" class="h-5" />
+                        <img src="dist/assets/icon/star.svg" alt="icon-star" class="h-5" />
+                    </div>
+                    <!-- Message -->
+                    <p class="text-white text-xl leading-8 mt-2 max-w-80">I was not so sure if there was a beautiful bedroom, but it was really great experience.</p>
+                    <!-- Profile User -->
+                    <div class="flex gap-3">
+                        <img src="dist/assets/image/profile-user.jpg" alt="profil picture" class="h-12 rounded-full" />
+                        <div class="flex-col">
+                            <p class="text-white text-base font-semibold">Evelin Bie</p>
+                            <p class="text-grayLight text-sm">Full-Time Traveler</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 8-->
+                <div class="flex flex-col items-start justify-center py-4 px-7 bg-primary space-y-5 rounded-3xl">
+                    <!-- Rating -->
+                    <div class="flex">
+                        <img src="dist/assets/icon/star.svg" alt="icon-star" class="h-5" />
+                        <img src="dist/assets/icon/star.svg" alt="icon-star" class="h-5" />
+                        <img src="dist/assets/icon/star.svg" alt="icon-star" class="h-5" />
+                        <img src="dist/assets/icon/star.svg" alt="icon-star" class="h-5" />
+                        <img src="dist/assets/icon/star.svg" alt="icon-star" class="h-5" />
+                    </div>
+                    <!-- Message -->
+                    <p class="text-white text-xl leading-8 mt-2 max-w-80">It’s just amazing, will be back.</p>
+                    <!-- Profile User -->
+                    <div class="flex gap-3">
+                        <img src="dist/assets/image/profile-user.jpg" alt="profil picture" class="h-12 rounded-full" />
+                        <div class="flex-col">
+                            <p class="text-white text-base font-semibold">Evelin Bie</p>
+                            <p class="text-grayLight text-sm">Full-Time Traveler</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 9-->
+                <div class="flex flex-col items-start justify-center py-4 px-7 bg-primary space-y-5 rounded-3xl">
+                    <!-- Rating -->
+                    <div class="flex">
+                        <img src="dist/assets/icon/star.svg" alt="icon-star" class="h-5" />
+                        <img src="dist/assets/icon/star.svg" alt="icon-star" class="h-5" />
+                        <img src="dist/assets/icon/star.svg" alt="icon-star" class="h-5" />
+                        <img src="dist/assets/icon/star.svg" alt="icon-star" class="h-5" />
+                        <img src="dist/assets/icon/star.svg" alt="icon-star" class="h-5" />
+                    </div>
+                    <!-- Message -->
+                    <p class="text-white text-xl leading-8 mt-2 max-w-80">I was not so sure if there was a beautiful bedroom, but it was really great experience.</p>
+                    <!-- Profile USer -->
+                    <div class="flex gap-3">
+                        <img src="dist/assets/image/profile-user.jpg" alt="profil picture" class="h-12 rounded-full" />
+                        <div class="flex-col">
+                            <p class="text-white text-base font-semibold">Evelin Bie</p>
+                            <p class="text-grayLight text-sm">Full-Time Traveler</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Testimonial -->
+
+    <!-- Start Footer -->
+    <footer class="bg-primary w-full p-2 mt-24">
+        <div class="max-w-screen-xl mx-auto mt-28">
+            <!-- Top Footer -->
+            <div class="flex justify-between">
+                <!-- Solutins -->
+                <ul class="flex flex-col gap-3">
+                    <li class="text-white text-base font-semibold">Solutions</li>
+                    <li class="text-grayLight text-base font-normal hover:text-accent"><a href="#">Credit Rewards</a></li>
+                    <li class="text-grayLight text-base font-normal hover:text-accent"><a href="#">P2P Renting</a></li>
+                    <li class="text-grayLight text-base font-normal hover:text-accent"><a href="#">Open for Listing</a></li>
+                    <li class="text-grayLight text-base font-normal hover:text-accent"><a href="#">AI Automation</a></li>
+                    <li class="text-grayLight text-base font-normal hover:text-accent"><a href="#">APIs Developer</a></li>
+                </ul>
+                <!-- Products -->
+                <ul class="flex flex-col gap-3">
+                    <li class="text-white text-base font-semibold">Product</li>
+                    <li class="text-grayLight text-base font-normal hover:text-accent"><a href="#">Featured House</a></li>
+                    <li class="text-grayLight text-base font-normal hover:text-accent"><a href="#">Browse Categories</a></li>
+                    <li class="text-grayLight text-base font-normal hover:text-accent"><a href="#">Special Awards</a></li>
+                    <li class="text-grayLight text-base font-normal hover:text-accent"><a href="#">Made-In Bandung</a></li>
+                    <li class="text-grayLight text-base font-normal hover:text-accent"><a href="#">Exclusive Style</a></li>
+                </ul>
+                <!-- Company -->
+                <ul class="flex flex-col gap-3">
+                    <li class="text-white text-base font-semibold">Company</li>
+                    <li class="text-grayLight text-base font-normal hover:text-accent"><a href="#">About Us</a></li>
+                    <li class="text-grayLight text-base font-normal hover:text-accent"><a href="#">Our Investors</a></li>
+                    <li class="text-grayLight text-base font-normal hover:text-accent"><a href="#">Missions 2024</a></li>
+                    <li class="text-grayLight text-base font-normal hover:text-accent"><a href="#">Careers</a></li>
+                    <li class="text-grayLight text-base font-normal hover:text-accent"><a href="#">Media Press</a></li>
+                </ul>
+                <div class="flex flex-col gap-7">
+                    <!-- Subscribe -->
+                    <div class="flex flex-col gap-3">
+                        <p class="text-white text-base font-semibold">Subscribe & Free Rewards</p>
+                        <form class="bg-secondLight flex items-center pl-4 max-w-xl rounded-full" action="">
+                            <img src="dist/assets/icon/sms.svg" alt="icon-email" class="h-6 mr-2" />
+                            <input class="bg-secondLight text-darkGray text-base placeholder:text-grayLight focus:outline-none" type="text" placeholder="Email Address" />
+                            <button class="bg-accent py-3 font-bold text-primary px-8 rounded-full">Subscribe</button>
+                        </form>
+                    </div>
+                    <!-- Language -->
+                    <div class="relative flex flex-col gap-3">
+                        <p class="text-white text-base font-semibold">Choose Language</p>
+                        <div class="flex items-center space-x-2.5 cursor-pointer" onclick="toggleDropdown()">
+                            <img src="dist/assets/icon/united.svg" alt="icon united kingdom flag" />
+                            <p class="text-white text-base">English (UK)</p>
+                            <img src="dist/assets/icon/chevron-down.svg" alt="icon chevron down" class="transition-transform transform" id="dropdownIcon"/>
+                        </div>
+                        <div id="dropdownMenu" class="absolute right-0 mt-2 w-48 bg-dark text-white rounded-lg shadow-lg hidden">
+                            <a href="#" class="block px-4 py-2 text-base hover:bg-primary">English (UK)</a>
+                            <a href="#" class="block px-4 py-2 text-base hover:bg-primary">Spanish</a>
+                            <a href="#" class="block px-4 py-2 text-base hover:bg-primary">French</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- line -->
+            <div class="h-0.5 bg-secondDarkGray mt-12 mb-12"></div>
+            <!-- Bottom Footer-->
+            <div class="flex justify-between items-center mb-20">
+                <a href="/" class="flex items-center">
+                    <img src="dist/assets/image/logo.svg" class="mr-2 h-8 sm:h-11" alt="Logo" />
+                    <span class="self-center text-2xl font-extrabold text-white">Nidejia</span>
+                </a>
+                <p class="text-grayLight text-base font-normal">All Rights Reserved Nidejia BuildWithAngga 2024</p>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    
+    <!-- Custom Js -->
+    <script src="dist/js/script.js"></script>
+
+</body>
+</html>
